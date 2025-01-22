@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pi-7 Calculate</title>
+	
+	<!-- logo atas -->
+	<link rel="icon" href="../Calculator BB BK - Revisi/hearth.png">
+	
+	<!-- Feather Icons -->
+	<script src="https://unpkg.com/feather-icons"></script>
+	
+	<!-- my style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- navbar start -->
+	<nav class="navbar">
+		<a href="#" class="navbar-logo">Pi-7 <span>Calculate</span></a>
+		
+		<div class="navbar-nav">
+			<a href="#home">Home</a>
+			<a href="#about">Pencipta</a>
+			<a href="#kalkulator">Kalkulator</a>
+			<a href="#referensi">Referensi</a>
+		</div>
+		
+		<div class="navbar-extra">
+			<a href="#" id="hamburger-menu"><i data-feather="menu"></i><a>
+		</div>
+	</nav>
+	<!-- navbar end -->
+	
+	<!-- hero section start -->
+	<section class="hero" id="home">
+		<main class="content">
+			<h1>Tanpa Kadar Rasa Canggung, raihlah impian bersamaku</h1>
+			<p>Kebaikan yang ditanam tidak akan berbuah nista.
+			Meskipun adakalanya kebaikan dibalas angkara murka.
+			Dan patut disadari, ranum buahnya akan selalu bisa dipetik di surga nanti.</p>
+			<a href="../Calculator BB BK - Revisi/index.html" class="cta">Yuk Hitung BB BK Bahan Makanan</a>
+		</main>
+	</section>
+	<!-- hero section end -->
+	
+	<!-- Pencipta section start -->
+	<section class="about" id="about">
+		<h2>PROFIL KAMI</h2>
+		<div class="row">
+			<div class="about-img1">
+				<img src="../Calculator BB BK - Revisi/HABIB.png" alt="Foto Habibi"></img>
+			</div>
+			<div class="bio1">
+				<h3 class="habibbio">Hola, Nama saya Habibi</h3>
+				<br>
+				<p>Saya lahir di Mojokerto, hobi saya adalah mencari hal-hal yang baru</p>
+			</div>
+		</div>
+		<div class="row2">
+			
+		</div>
+	</section>
+	<!-- Pencipta section end -->
+	
+	<!-- Kalkulator section start -->
+	<section id="kalkulator">
+	<h1 class="judul" href="#">Kalkulator <span class="jajan">Kebutuhan Gizi</span></h1><hr>
+
+	<form id="calculate">
+		<label for="food-name">Nama Klien:</label>
+		<input type="text" id="food-name" name="food-name" required>
+
+		<label for="calories">Jenis Kelamin:</label>
+		<select id="calories" name="calories" required>
+			<option value="lelaki">Laki-laki</option>
+			<option value="wanita">perempuan</option>
+		</select>
+
+		<label for="protein">Umur (Thn):</label>
+		<input type="number" id="protein" name="protein" required>
+
+		<label for="carbs">Berat Badan (Kg):</label>
+		<input type="number" id="carbs" name="carbs" required>
+
+		<label for="fat">Tinggi Badan (cm):</label>
+		<input type="number" id="fat" name="fat" required>
+		
+		<label for="golongan">Golongan :</label>
+		<select id="golongan" name="golongan" required>
+			<option value="sehat">Sehat</option>
+			<option value="dm">Diabetes Mellitus</option>
+			<option value="ginjal">Gangguan Ginjal</option>
+			<option value="lb">Luka Bakar</option>
+			<option value="sh">Sirosis Hati</option>
+			<option value="gsnp">Gangguan Saluran Nafas/Paru</option>
+			<option value="po">Post Bedah/Pemulihan Pasca Operasi</option>
+			<option value="op">Ketika Operasi</option>
+			<option value="st">Stroke/Kolitis Ulseratif/Krohn</option>
+			<option value="hiv">HIV-AIDS</option>
+			<option value="sgt">Syndrome Geriatri</option>
+			<option value="kmtxrt">Pasien Kemoterapi/XRT</option>
+			<option value="pankreatitis">Pankreatitis</option>
+			<option value="kanker">Kanker</option>
+			<option value="hptts">Hepatitis/Alcoholic/Post tranplantation</option>
+			<option value="cfs">Cystic Fibrosis</option>
+			<option value="cill">Pasien Critical ILL</option>
+			<option value="ns">Nephrotic Syndrome</option>
+			<option value="gj">Gagal ginjal/Hemodialisis/CAPD</option>
+			<option value="gb">Gizi Buruk/Malnutrisi</option>
+			<option value="bht1">Ibu Hamil Trimester 1</option>
+			<option value="bht23">Ibu Hamil Trimester 2/3</option>
+			<option value="atlet">Khusus Atlet</option>
+		</select>
+		<!-- perlu revisi -->
+		
+		<!-- perlu revisi end -->
+		<label for="faf">Faktor Aktivitas:</label>
+		<input type="number" id="faf" required name="faf" min="0" value="0" step="any">
+		
+		<label for="fas">Faktor Stress:</label>
+		<input type="number" id="fas" required name="fas" min="0" value="0" step="any">
+		
+		<label for="kh">Persen Kebutuhan KH(%) :</label>
+		<input type="number" id="kh" name="kh" required>
+		
+		<label for="p">Persen Kebutuhan Protein (%) :</label>
+		<input type="number" id="p" name="p" required>
+		
+		<label for="l">Persen Kebutuhan Lemak(%) :</label>
+		<input type="number" id="l" name="l" required>
+
+		<button type="submit">Hitung</button>
+	</form>
+	<div id="result"></div>
+	</section>
+	<!-- kalkulator section end -->
+	
+	<!-- footer -->
+	<div class="footer">
+		<p>&copy; Habibi & Ainun Genius Gizi </p>
+	</div>
+	
+	<!-- Feather Icons -->
+	<script>
+		feather.replace()
+	</script>
+	
+	<!-- myscript -->
+	<script src="script.js"></script>
+</body>
+</html>
